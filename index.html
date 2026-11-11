@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرا | آرایش و مراقبت پوست</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Product artwork, drawn as inline SVG so nothing depends on the network -->
+<svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+    <defs>
+        <linearGradient id="bg-soft" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f3e6e4" />
+            <stop offset="100%" stop-color="#e6d2d3" />
+        </linearGradient>
+        <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.45" />
+        </linearGradient>
+    </defs>
+
+    <symbol id="art-dropper" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="url(#bg-soft)" />
+        <circle cx="100" cy="100" r="72" fill="#ffffff" opacity="0.35" />
+        <rect x="78" y="34" width="44" height="30" rx="10" fill="#c98a92" />
+        <rect x="88" y="60" width="24" height="22" fill="#e7b3b8" />
+        <rect x="58" y="80" width="84" height="88" rx="16" fill="url(#glass)" stroke="#c98a92" stroke-width="2" />
+        <rect x="70" y="104" width="60" height="34" rx="6" fill="#c98a92" opacity="0.35" />
+        <rect x="70" y="146" width="26" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+    </symbol>
+
+    <symbol id="art-lipstick" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="url(#bg-soft)" />
+        <circle cx="100" cy="100" r="72" fill="#ffffff" opacity="0.35" />
+        <path d="M84 46 h32 v46 h-32 z" fill="#a8495a" />
+        <path d="M84 46 h32 l-16 -18 z" fill="#c2636f" />
+        <rect x="78" y="90" width="44" height="76" rx="6" fill="#d9a7ad" />
+        <rect x="78" y="118" width="44" height="10" fill="#c98a92" />
+        <rect x="86" y="128" width="6" height="30" rx="3" fill="#ffffff" opacity="0.7" />
+    </symbol>
+
+    <symbol id="art-flacon" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="url(#bg-soft)" />
+        <circle cx="100" cy="100" r="72" fill="#ffffff" opacity="0.35" />
+        <rect x="86" y="26" width="28" height="22" rx="4" fill="#c98a92" />
+        <rect x="94" y="44" width="12" height="20" fill="#e7b3b8" />
+        <rect x="56" y="62" width="88" height="104" rx="18" fill="url(#glass)" stroke="#c98a92" stroke-width="2" />
+        <rect x="72" y="96" width="56" height="40" rx="6" fill="#c98a92" opacity="0.3" />
+        <rect x="70" y="146" width="26" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+    </symbol>
+
+    <symbol id="art-jar" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="url(#bg-soft)" />
+        <circle cx="100" cy="100" r="72" fill="#ffffff" opacity="0.35" />
+        <rect x="50" y="96" width="100" height="62" rx="12" fill="url(#glass)" stroke="#c98a92" stroke-width="2" />
+        <ellipse cx="100" cy="96" rx="50" ry="16" fill="#d9a7ad" stroke="#c98a92" stroke-width="2" />
+        <ellipse cx="100" cy="94" rx="34" ry="10" fill="#c98a92" opacity="0.5" />
+        <rect x="66" y="120" width="24" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+    </symbol>
+
+    <symbol id="art-pump" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="url(#bg-soft)" />
+        <circle cx="100" cy="100" r="72" fill="#ffffff" opacity="0.35" />
+        <rect x="112" y="30" width="34" height="10" rx="5" fill="#c98a92" />
+        <rect x="96" y="38" width="14" height="22" fill="#e7b3b8" />
+        <rect x="66" y="58" width="68" height="108" rx="14" fill="url(#glass)" stroke="#c98a92" stroke-width="2" />
+        <rect x="80" y="86" width="40" height="46" rx="6" fill="#c98a92" opacity="0.3" />
+        <rect x="78" y="142" width="24" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+    </symbol>
+</svg>
+
+<header>
+    <nav>
+        <a class="logo" href="#home">آرا</a>
+        <ul class="nav-links">
+            <li><a href="#home">خانه</a></li>
+            <li><a href="#categories">دسته‌بندی‌ها</a></li>
+            <li><a href="#products">محصولات</a></li>
+            <li><a href="#about">داستان ما</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+        <button class="cart-btn" type="button" aria-label="سبد خرید">
+            سبد خرید <span class="cart-count">۰</span>
+        </button>
+    </nav>
+
+    <div class="hero" id="home">
+        <p class="kicker">آرایش و مراقبت پوست</p>
+        <h1>آرا</h1>
+        <p class="hero-sub">فرمول کوتاه، بدون چیزی که پوستت به آن نیاز ندارد.</p>
+        <div class="hero-actions">
+            <a href="#products" class="btn">محصولات را ببینید</a>
+            <a href="#about" class="btn btn-ghost">چطور ساخته می‌شود</a>
+        </div>
+        <ul class="hero-facts">
+            <li><b>۱۲</b><span>ماه ضمانت بازگشت</span></li>
+            <li><b>۰</b><span>عطر و پارابن</span></li>
+            <li><b>۱۰۰٪</b><span>تولید داخل ایران</span></li>
+        </ul>
+    </div>
+</header>
+
+<section id="categories">
+    <h2 class="section-title">دسته‌بندی‌ها</h2>
+    <div class="cat-grid">
+        <a class="cat-card" href="#products">
+            <span class="cat-art"><svg viewBox="0 0 200 200"><use href="#art-lipstick" /></svg></span>
+            <span class="cat-name">آرایش صورت</span>
+            <span class="cat-count">۱۸ محصول</span>
+        </a>
+        <a class="cat-card" href="#products">
+            <span class="cat-art"><svg viewBox="0 0 200 200"><use href="#art-dropper" /></svg></span>
+            <span class="cat-name">مراقبت پوست</span>
+            <span class="cat-count">۲۴ محصول</span>
+        </a>
+        <a class="cat-card" href="#products">
+            <span class="cat-art"><svg viewBox="0 0 200 200"><use href="#art-flacon" /></svg></span>
+            <span class="cat-name">عطر و ادکلن</span>
+            <span class="cat-count">۱۲ محصول</span>
+        </a>
+        <a class="cat-card" href="#products">
+            <span class="cat-art"><svg viewBox="0 0 200 200"><use href="#art-pump" /></svg></span>
+            <span class="cat-name">مو و بدن</span>
+            <span class="cat-count">۹ محصول</span>
+        </a>
+    </div>
+</section>
+
+<section id="products">
+    <h2 class="section-title">پرفروش‌های این ماه</h2>
+    <div class="product-grid">
+
+        <article class="product-card">
+            <div class="product-media">
+                <svg class="art" viewBox="0 0 200 200" role="img" aria-label="سرم ویتامین سی"><use href="#art-dropper" /></svg>
+                <span class="tag tag-best">پرفروش</span>
+                <button class="quick-add" type="button" aria-label="افزودن سرم ویتامین سی">+</button>
+            </div>
+            <div class="product-info">
+                <h3>سرم ویتامین سی</h3>
+                <p class="product-note">روشن‌کننده · ۳۰ میلی‌لیتر</p>
+                <p class="price">۶۸۰,۰۰۰ تومان</p>
+                <button class="buy-btn" type="button">افزودن به سبد</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-media">
+                <svg class="art" viewBox="0 0 200 200" role="img" aria-label="کرم پوشش‌دهنده سبک"><use href="#art-jar" /></svg>
+                <span class="tag tag-new">جدید</span>
+                <button class="quick-add" type="button" aria-label="افزودن کرم پوشش‌دهنده">+</button>
+            </div>
+            <div class="product-info">
+                <h3>کرم پوشش‌دهنده سبک</h3>
+                <p class="product-note">مات · ۴۵ گرم</p>
+                <p class="price">۵۲۰,۰۰۰ تومان</p>
+                <button class="buy-btn" type="button">افزودن به سبد</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-media">
+                <svg class="art" viewBox="0 0 200 200" role="img" aria-label="روغن شب رتینول"><use href="#art-flacon" /></svg>
+                <button class="quick-add" type="button" aria-label="افزودن روغن شب رتینول">+</button>
+            </div>
+            <div class="product-info">
+                <h3>روغن شب رتینول</h3>
+                <p class="product-note">ترمیم‌کننده · ۳۰ میلی‌لیتر</p>
+                <p class="price">۸۹۰,۰۰۰ تومان</p>
+                <button class="buy-btn" type="button">افزودن به سبد</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-media">
+                <svg class="art" viewBox="0 0 200 200" role="img" aria-label="رژ لب مات مهتابی"><use href="#art-lipstick" /></svg>
+                <button class="quick-add" type="button" aria-label="افزودن رژ لب مات">+</button>
+            </div>
+            <div class="product-info">
+                <h3>رژ لب مات مهتابی</h3>
+                <p class="product-note">ماندگاری بالا · ۴ گرم</p>
+                <p class="price">۳۹۰,۰۰۰ تومان</p>
+                <button class="buy-btn" type="button">افزودن به سبد</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">داستان ما</h2>
+    <div class="about-content">
+        <p class="lead">
+            آرا از یک آزمایشگاه کوچک شروع شد: اینکه چرا هر محصولی که خریده بودیم به پوستمان
+            می‌خورد و بعد از چند هفته برمی‌گشتیم.
+        </p>
+        <p>
+            جواب ساده بود — فرمول‌های طولانی. پس تصمیم گرفتیم هر محصول را با کمترین مادهٔ مؤثر
+            بسازیم و به‌جای بسته‌بندی پرزرق‌وبرق، روی نتیجهٔ قابل‌لمس تمرکز کنیم. آرا را
+            خودمان تولید می‌کنیم، در بسته‌بندی قابل‌بازیافت، با فهرست کامل مواد روی هر محصول.
+        </p>
+        <ul class="about-facts">
+            <li><b>فرمول کوتاه</b><span>کمتر از ۱۲ ماده در هر محصول</span></li>
+            <li><b>تست روی انسان</b><span>هر بچ، ۹۰ روز روی ۳۰ نفر</span></li>
+            <li><b>قیمت منصفانه</b><span>حاشیهٔ کم، هزینهٔ کمتر</span></li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">تماس با ما</h2>
+    <div class="contact-content">
+        <div class="social-links">
+            <a href="#" class="social-link">اینستاگرام</a>
+            <a href="#" class="social-link">تلگرام</a>
+            <a href="#" class="social-link">یوتیوب</a>
+            <a href="#" class="social-link">واتساپ</a>
+        </div>
+        <p class="email-text">hello@ara.ir · پاسخگویی شنبه تا چهارشنبه، ۱۰ تا ۱۸</p>
+    </div>
+</section>
+
+<footer>
+    <p>© ۱۴۰۵ آرا. همهٔ محصولات در ایران تولید می‌شوند.</p>
+    <p class="footer-note">آرا شبکه‌ی خودش را می‌فروشد — هیچ واسطه‌ای در قیمت نیست.</p>
+</footer>
+
+</body>
+</html>
